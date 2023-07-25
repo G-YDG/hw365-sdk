@@ -1,0 +1,41 @@
+{
+    "name": "ydg/hw365-sdk",
+    "description": "海威365特权SDK",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "sdk",
+        "hw",
+        "haiwei",
+        "hw365",
+        "haiwei365",
+        "hw365-sdk",
+        "haiwei365-sdk"
+    ],
+    "require": {
+        "php": "^7.0|^8.0",
+        "ydg/foudation-sdk": "^1.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ydg\\Hw365Sdk\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "YdgTest\\Hw365Sdk\\": "tests/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "phpunit",
+        "cs-fix": "php-cs-fixer fix ."
+    }
+}
