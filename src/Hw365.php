@@ -11,6 +11,7 @@ use Ydg\FoudationSdk\ServiceContainer;
  * @property Api\Mcdonald\Mcdonald $mcdonald
  * @property Api\Wallace\Wallace $wallace
  * @property Api\Luckin\Luckin $luckin
+ * @property Api\Sbkplus\Sbkplus $sbkplus
  */
 class Hw365 extends ServiceContainer
 {
@@ -19,5 +20,6 @@ class Hw365 extends ServiceContainer
         Api\Mcdonald\ServiceProvider::class,
         Api\Wallace\ServiceProvider::class,
         Api\Luckin\ServiceProvider::class,
+        Api\Sbkplus\ServiceProvider::class,
     ];
 }
