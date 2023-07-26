@@ -9,11 +9,13 @@ use Ydg\FoudationSdk\ServiceContainer;
 /**
  * @property Api\Kfc\Kfc $kfc
  * @property Api\Mcdonald\Mcdonald $mcdonald
+ * @property Api\Wallace\Wallace $wallace
  */
 class Hw365 extends ServiceContainer
 {
     protected $providers = [
         Api\Kfc\ServiceProvider::class,
         Api\Mcdonald\ServiceProvider::class,
+        Api\Wallace\ServiceProvider::class,
     ];
 }

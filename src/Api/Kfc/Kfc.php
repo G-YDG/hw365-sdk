@@ -10,7 +10,7 @@ class Kfc extends Hw365Api
 {
     public function entrance(array $params = []): string
     {
-        return $this->getBaseUri() . '/api/entrance?' . http_build_query($this->formatParams($params));
+        return $this->buildRequestUrl('/api/entrance', $params);
     }
 
     public function queryOrder(array $params = []): array
