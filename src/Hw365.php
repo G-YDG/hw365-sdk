@@ -15,6 +15,7 @@ use Ydg\FoudationSdk\ServiceContainer;
  * @property Api\Nayuki\Nayuki $nayuki
  * @property Api\Heytea\Heytea $heytea
  * @property Api\Ticket\Ticket $ticket
+ * @property Api\Burgerking\Burgerking $burgerking
  */
 class Hw365 extends ServiceContainer
 {
@@ -27,5 +28,6 @@ class Hw365 extends ServiceContainer
         Api\Nayuki\ServiceProvider::class,
         Api\Heytea\ServiceProvider::class,
         Api\Ticket\ServiceProvider::class,
+        Api\Burgerking\ServiceProvider::class,
     ];
 }
